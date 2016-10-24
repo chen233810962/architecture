@@ -62,7 +62,7 @@
         index.js       -- 控制前端对应页面的逻辑处理
     custom             -- 数据与接口的交互处理
     config.js		   -- 开发环境下使用的requirejs配置文件
-        ....
+    ....
 
 ####gulpfile.js            -- gulp配置文件
 ####package.json           -- 项目配置文件,可用npm快速导入项目所需的包文件
@@ -72,7 +72,7 @@
 ------------
 
 创建窗口模块举例
-``` javascript
+```javascript
 define(function(require, exports, module) {
     require("dialog_css");
     requier("dialog");
@@ -96,7 +96,7 @@ define(function (require, exports) {
 ```
 
 需要一个开发阶段requirejs的配置文件config.js，并将其引入到页面中：
-``` javascript
+```javascript
 // utf-8
 require.config({
 	baseUrl: "../",
@@ -111,7 +111,7 @@ require(['jquery','index']);
 ```
 
 展示的页面index.html
-```
+```html
 <!DOCTYPE html>
 <html>
 <head>
@@ -132,7 +132,7 @@ require(['jquery','index']);
 
 ### package.json
 定义gulp的基本配置
-``` json
+```json
 {
   "name": "text",
   "version": "1.0.0",
