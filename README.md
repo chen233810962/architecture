@@ -41,33 +41,31 @@
     │  │
     │  └─View   视图目录
 
-
-```
-View                   -- 项目的前端展示页面
+####View                  `-- 项目的前端展示页面`
     html               -- 按功能划分
         index.html     -- 业务模块
 
-plugin                 -- 插件模块
+####plugin             `-- 插件模块`
     jquery
         1.8.2
             jquery.js
-    ...                -- 放置项目所需插件
+    ...               -- 放置项目所需插件
 
-style                  -- 前端样式文件包含css、images、前端效果展示的js
+####style                `--  前端样式文件包含css、images、前端效果展示的js`
     js
     css
-    js
+    images
     ....
 
-moudles                -- 模块管理
+####moudles               `-- 模块管理`
     controller
         index.js       -- 控制前端对应页面的逻辑处理
     custom             -- 数据与接口的交互处理
     config.js		   -- 开发环境下使用的requirejs配置文件
         ....
 
-gulpfile.js            -- gulp配置文件
-package.json           -- 项目配置文件,可用npm快速导入项目所需的包文件
+####gulpfile.js             `-- gulp配置文件`
+####package.json          `-- 项目配置文件,可用npm快速导入项目所需的包文件`
 ```
 
 ## 2. 模块说明
