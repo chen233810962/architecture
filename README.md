@@ -56,7 +56,7 @@ plugin                 -- 插件模块
 style                  -- 前端样式文件包含css、images、前端效果展示的js
     js
     css
-    js
+    images
     ....
 
 moudles                -- 模块管理
@@ -100,7 +100,6 @@ define(function (require, exports) {
 需要一个开发阶段requirejs的配置文件config.js，并将其引入到页面中：
 ``` javascript
 // utf-8
-
 require.config({
 	baseUrl: "../",
     paths:{
