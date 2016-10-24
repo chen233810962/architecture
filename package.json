@@ -1,7 +1,7 @@
 {
   "name": "text",
   "version": "1.0.0",
-  "description": "text",
+  "description": "前端框架模板",
   "main": "view/index.html",
   "dependencies": {
     "jquery": "^1.11.3",
