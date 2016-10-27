@@ -1,9 +1,8 @@
 
 // 接口地址
 var api_url = "http://test.jwxba.com/index.php?m=API&c=User&api_ret=jsonp&a=";
-
 var action = window.location.href.replace(/(.*\/)*([^.]+).*/ig,"$2");
-
+var module = 'template';
 require.config({
 	baseUrl: "../",
 	paths:{
@@ -21,8 +20,11 @@ require.config({
         "common": "modules/custom/common/1.0/common",  //独立封装一些工具函数
         "interface": "modules/custom/interface/1.0/interface", //相关接口
         "pageClass":"modules/custom/libs/pageClass",//分页类
-	}
+	},
+    shim : {
+        'index': ['jquery','ajax','common','interface']
+    }
 
 });
 
-require(['jquery','template','ajax','common','interface','index']);
+require(['index']);
