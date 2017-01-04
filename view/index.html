@@ -4,20 +4,19 @@
 		<meta charset="UTF-8">
 		<title></title>
 	</head>
+	<link rel="stylesheet" type="text/css" href="../plugin/artDialog/ui-dialog.css"/>
 	<body>
 	<div id="shun">
-		<ul></ul>
+		<ul>
+			<li v-for="list in arry" v-text="list.name"></li>
+			<p>{{mode(2)}}</p>
+		</ul>
+		<p @click='num++'>点击加1</p>
+		<span v-text='num'></span>
 	</div>
 
 	</body>
 
 	<!-- requirejs 模块加载 -->
 	<script data-main="../modules/config" src="../plugin/require/require.js"></script>
-	<script type="text/html" id="t:crs">
-		<li><%=list.name%></li>
-		<li><%=list.name%></li>
-		<li><%=list.name%></li>
-		<li><%=list.name%></li>
-		<li><%=list.name%></li>
-	</script>
 </html>
